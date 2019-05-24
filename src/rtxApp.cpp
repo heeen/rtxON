@@ -179,6 +179,7 @@ void RtxApp::Update(const size_t, const float dt) {
     UniformParams* params = reinterpret_cast<UniformParams*>(mCameraBuffer.Map());
 
     params->sunPosAndAmbient = vec4(sSunPos, sAmbientLight);
+    params->skyColor = vec4(0.5, 0.5, 1.0, 1.0);
 
     this->UpdateCameraParams(params, dt);
 

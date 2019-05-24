@@ -64,6 +64,7 @@ struct UniformParams {
     vec4 camUp;
     vec4 camSide;
     vec4 camNearFarFov;
+    vec4 skyColor;
 };
 
 
